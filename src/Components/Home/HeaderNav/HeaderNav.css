@@ -1,0 +1,25 @@
+.header {
+    background-color: #2d2e40;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-bar {
+    display: flex;
+    margin-left: 20px;
+    gap: 50px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #4af0fc;
+    text-decoration: none;
+}

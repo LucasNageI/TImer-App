@@ -1,0 +1,101 @@
+.timer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    border: 4px solid #46f2fe;
+    border-radius: 100%;
+}
+
+.timer {
+    color: white;
+    font-size: 80px;
+}
+
+.btns-container {
+    display: flex;
+    gap: 10px;
+}
+
+.start-stop-btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 4px solid #46f2fe;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.start-stop-btn:hover {
+    background-color: #131b28;
+}
+
+.span {
+    color: white;
+    font-size: 30px;
+}
+
+.start-true {
+    display: none;
+}
+
+.start-false {
+    display: flex;
+}
+
+.stop-true {
+    display: flex;
+}
+
+.stop-false {
+    display: none;
+}
+
+.reset-btn {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 4px solid #46f2fe;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.reset-btn:hover {
+    background-color: #131b28;
+}
+
+@media (max-width: 550px) {
+    .timer-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .timer {
+        font-size: 50px;
+    }
+
+    .start-stop-btn, .reset-btn {
+        width: 100px;
+        height: 50px;
+    }
+
+    .span {
+        font-size: 20px;
+    }
+
+}
