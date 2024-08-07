@@ -1,9 +1,9 @@
 .header {
-    background-color: #2d2e40;
+    background-color: #0a131a;
     height: 50px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #ae27fd;
 }
 
 .nav-bar {
@@ -17,9 +17,10 @@
     text-decoration: none;
     transition: all 0.3s;
     font-size: 20px;
+    padding: 10px;
 }
 
 .link:hover {
-    color: #4af0fc;
+    color: #8019fe;
     text-decoration: none;
 }

@@ -39,11 +39,11 @@ export const Timer = () => {
             </div>
             <div className='btns-container'>
                 <button className='start-stop-btn' onClick={handleStartStop}>
-                    <span className={`span start-` + is_counting}>START</span>
-                    <span className={`span stop-` + is_counting}>STOP</span>
+                    <span className={`span start-` + is_counting}><i className="bi bi-skip-start-fill"></i></span>
+                    <span className={`span stop-` + is_counting}><i className="bi bi-pause-fill"></i></span>
                 </button>
                 <button className='reset-btn' onClick={handleReset}>
-                    <span className='span'>RESET</span>
+                    <span className='span'><i className="bi bi-arrow-clockwise"></i></span>
                 </button>
             </div>
         </section>

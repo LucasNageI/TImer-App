@@ -1,7 +1,7 @@
 .home {
     width: 100vw;
     height: calc(100vh);
-    background-color: #2d2e40;
+    background-color: #0a131a;
     display: flex;
     flex-direction: column;
     gap: 100px;
