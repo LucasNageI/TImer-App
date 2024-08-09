@@ -1,0 +1,13 @@
+.loca-time-container {
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.local-time {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 180px;
+}

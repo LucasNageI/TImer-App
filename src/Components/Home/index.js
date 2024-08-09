@@ -1,5 +1,6 @@
 import { HeaderNav } from "./HeaderNav/HeaderNav.jsx";
-import { Timer } from "./Timer/Timer.jsx";
+import { Stopwatch } from "./Stopwatch/Stopwatch.jsx";
 import { LocalTime } from "./LocalTime/LocalTime.jsx";
+import { Timer } from "./Timer/Timer.jsx";
 
-export {HeaderNav, Timer, LocalTime}
+export {HeaderNav, Stopwatch, LocalTime, Timer}

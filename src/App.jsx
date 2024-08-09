@@ -7,7 +7,7 @@ function App() {
 
     return (
         <Routes>
-            <Route path="/" element={<Navigate to="/Home/Timer" replace />} />
+            <Route path="/" element={<Navigate to="/Home/Stopwatch" replace />} />
             <Route path="/Home/:section" element={<Home />} />
         </Routes>
     )

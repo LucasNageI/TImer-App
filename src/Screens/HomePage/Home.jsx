@@ -1,19 +1,19 @@
 import React from 'react'
-import { HeaderNav, Timer, LocalTime } from '../../Components/Home/index.js'
+import { HeaderNav, Stopwatch, LocalTime, Timer } from '../../Components/Home/index.js'
 import { useParams } from 'react-router-dom'
 import './Home.css'
 
 export const Home = () => {
     const { section } = useParams()
 
-    if (section === 'Timer') {
+    if (section === 'Stopwatch') {
         return (
             <main className='home'>
                 <header>
                     <HeaderNav />
                 </header>
                 <section>
-                    <Timer />
+                    <Stopwatch />
                 </section>
             </main>
         )
@@ -26,6 +26,18 @@ export const Home = () => {
             </header>
             <section>
                 <LocalTime />
+            </section>
+        </main>
+        )
+    }
+    else if (section === 'Timer') {
+        return(
+        <main className='home'>
+            <header>
+                <HeaderNav />
+            </header>
+            <section>
+                <Timer />
             </section>
         </main>
         )
