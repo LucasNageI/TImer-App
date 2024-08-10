@@ -6,9 +6,9 @@ export const HeaderNav = () => {
   return (
     <header className='header'>
         <nav className='nav-bar'>
+            <Link className='link' to={'/Home/Timer'}>Timer</Link>
             <Link className='link' to={'/Home/Stopwatch'}>Stopwatch</Link>
             <Link className='link' to={'/Home/LocalTime'}>LocalTime</Link>
-            <Link className='link' to={'/Home/Timer'}>Timer</Link>
         </nav>
     </header>
   )

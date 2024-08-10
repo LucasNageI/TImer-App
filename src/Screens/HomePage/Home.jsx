@@ -6,49 +6,38 @@ import './Home.css'
 export const Home = () => {
     const { section } = useParams()
 
-    if (section === 'Stopwatch') {
+    if (section === 'Timer') {
         return (
             <main className='home'>
-                <header>
-                    <HeaderNav />
-                </header>
-                <section>
-                    <Stopwatch />
-                </section>
-            </main>
-        )
-    }
-    else if (section === 'LocalTime') {
-        return(
-        <main className='home'>
-            <header>
                 <HeaderNav />
-            </header>
-            <section>
-                <LocalTime />
-            </section>
-        </main>
-        )
-    }
-    else if (section === 'Timer') {
-        return(
-        <main className='home'>
-            <header>
-                <HeaderNav />
-            </header>
-            <section>
                 <Timer />
-            </section>
-        </main>
+            </main>
         )
     }
-    else {
-        return(
+
+    else if (section === 'Stopwatch') {
+        return (
             <main className='home'>
-                <header>
-                    <HeaderNav />
-                </header>   
+                <HeaderNav />
+                <Stopwatch />
             </main>
-            )
+        )
+    }
+
+    else if (section === 'LocalTime') {
+        return (
+            <main className='home'>
+                <HeaderNav />
+                <LocalTime />
+            </main>
+        )
+    }
+
+    else {
+        return (
+            <main className='home'>
+                <HeaderNav />
+            </main>
+        )
     }
 }

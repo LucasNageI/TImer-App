@@ -1,0 +1,60 @@
+.timer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { /* para que no aparezcan las flechitas para subir y bajar el valor del input */
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.timer-countdown-value {
+    background-color: transparent;
+    border: 2px solid #8019fe;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    color: white;
+}
+
+.timer-countdown-value:focus {
+    outline: none;
+}
+
+.submit-timer-btn {
+    background-color: white;
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.timer {
+    color: #faf0e7;
+    font-size: 45px;
+    border-bottom: 4px solid #8019fe;
+    padding: 20px;
+}
+
+.btns-timer-container {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 550px) {
+    .timer {
+        font-size: 30px;
+    }
+}

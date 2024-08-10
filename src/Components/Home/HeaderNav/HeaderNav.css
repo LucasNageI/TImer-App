@@ -9,7 +9,7 @@
 .nav-bar {
     display: flex;
     margin-left: 20px;
-    gap: 50px;
+    gap: 20px;
 }
 
 .link {
@@ -18,9 +18,16 @@
     transition: all 0.3s;
     font-size: 20px;
     padding: 10px;
+    font-size: 16px;
 }
 
 .link:hover {
     color: #8019fe;
     text-decoration: none;
+}
+
+@media (max-width: 550px) {
+    .link {
+        font-size: 14px;
+    }
 }

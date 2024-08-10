@@ -1,13 +1,28 @@
-.loca-time-container {
-    height: calc(100vh - 150px);
+.local-time-container {
+    height: calc(80vh - 150px);
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20vh;
 }
 
 .local-time {
     color: white;
-    font-size: 60px;
-    position: relative;
-    top: 180px;
+    font-size: 45px;
+    border-bottom: 4px solid #8019fe;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+
+.specified-local-time {
+    color: gray;
+    margin-top: 10px;
+} 
+
+@media (max-width: 550px) {
+    .local-time{
+        font-size: 30px;
+    }
+
 }

@@ -14,8 +14,9 @@ export const LocalTime = () => {
     }, []) /* siempre que se renderice la pagina, el useEffect se va a  */
 
     return (
-        <div className='loca-time-container'>
+        <section className='local-time-container'>
             <span className='local-time'>{time}</span>
-        </div>
+            <span className='specified-local-time'> UTC/GMT -3</span>
+        </section>
     )
 }
