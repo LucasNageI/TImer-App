@@ -34,16 +34,17 @@ export const Timer = () => {
     }, [is_counting, seconds, minutes, hours])
 
     const limitInputLength = (e) => {
-        const current_value = e.target.value
-
-        if (current_value.length >= 2 && e.key !== 'Backspace' && e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') {
-            e.preventDefault()
+        const current_value = e.target.value;
+        const new_value = current_value + e.key;
+    
+        if ((new_value > 59 || current_value.length >= 2) && e.key !== 'Backspace' && e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') {
+            e.preventDefault();
         }
     }
 
     const handleCountdownForm = (e) => {
         e.preventDefault()
-        let countdown_hours = parseInt(e.target.elements['countdown_hours'].value) || 0 /* si el valor ingresado es NaN, lo convierte a 0 */
+        let countdown_hours = parseInt(e.target.elements['countdown_hours'].value) || 0
         let countdown_minutes = parseInt(e.target.elements['countdown_minutes'].value) || 0
         let countdown_seconds = parseInt(e.target.elements['countdown_seconds'].value) || 0
 
